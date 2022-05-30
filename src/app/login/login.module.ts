@@ -1,0 +1,22 @@
+import { HeaderComponent } from './../layout/components/header/header.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { LoginRoutingModule } from './login-routing.module';
+import { LoginComponent } from './login.component';
+
+
+@NgModule({
+  declarations: [LoginComponent],
+  imports: [
+    CommonModule,
+    LoginRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    ToastrModule,
+    // MatProgressSpinnerModule
+  ]
+})
+export class LoginModule { }
