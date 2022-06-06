@@ -13,6 +13,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MbscModule } from '@mobiscroll/angular-lite';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { NgChartsModule } from 'ng2-charts';
+// import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     MatDividerModule,
     NgbModule,
     Ng2SearchPipeModule,
+    NgChartsModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

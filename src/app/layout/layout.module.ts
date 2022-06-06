@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
     NgbDropdownModule,
     FormsModule,
     ReactiveFormsModule,
+    NgChartsModule
   ]
 })
 export class LayoutModule { }

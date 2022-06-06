@@ -9,7 +9,7 @@
                         <!-- <img class="card-img-top img-fluid" [src]=item.image
                             alt="monthly-votes" /> -->
 
-                            <!-- <img class="card-img-top img-fluid" src="./../../../assets/images/dashboard/football-award.png"
+                        <!-- <img class="card-img-top img-fluid" src="./../../../assets/images/dashboard/football-award.png"
                             alt="monthly-votes" /> -->
                         <div class="card-body">
                             <h4 class="card-title">{{ item.title }}</h4>
@@ -21,5 +21,13 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="row">
+        <canvas baseChart [data]="salesData" [type]="'bar'" [options]="chartOptions">
+        </canvas>
+
+        <canvas baseChart [data]="salesData" [type]="'line'" [options]="chartOptions">
+        </canvas>
     </div>
 </div>
