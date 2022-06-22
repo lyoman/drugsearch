@@ -4,8 +4,7 @@
             <i class="fa fa-fw fa-dashboard"></i>&nbsp;
             <span>{{ 'Home' }}</span>
         </a>
-        <a [routerLinkActive]="['router-link-active']"
-            [routerLink]="['/exclusions']" class="list-group-item">
+        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/exclusions']" class="list-group-item">
             <i class="fa fa-fw fa-address-card"></i>&nbsp;
             <span>{{ 'Daily Report' }}</span>
         </a>
@@ -18,21 +17,28 @@
             <span>{{ 'Monthly Report' }}</span>
         </a>
 
+        <a [routerLinkActive]="['router-link-active']" class="list-group-item" routerLink="/drug-search-results">
+            <i class="fa fa-fw fa-address-card"></i>&nbsp;
+            <span>{{ 'Drug Search Results' }}</span>
+        </a>
+
         <div class="nested-menu">
-            <a (click)="addExpandClass('pages')" [routerLinkActive]="['router-link-active']" [routerLink]="['/monthly-votes']" class="list-group-item">
+            <a (click)="addExpandClass('pages')" [routerLinkActive]="['router-link-active']" class="list-group-item">
                 <i class="fa fa-fw fa-address-card"></i>&nbsp;
                 <span>{{ 'Diseases' }}</span>
             </a>
             <li [class.expand]="showMenu === 'pages'" class="nested">
                 <ul class="submenu">
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/monthly-votes/coach-of-the-month']">
+                        <a [routerLinkActive]="['router-link-active']"
+                            [routerLink]="['/monthly-votes/coach-of-the-month']">
                             <i class="fa fa-monument"></i>&nbsp;
                             <span>{{ 'Coach of the Month' }}</span>
                         </a>
                     </li>
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/monthly-votes/player-of-the-month']">
+                        <a [routerLinkActive]="['router-link-active']"
+                            [routerLink]="['/monthly-votes/player-of-the-month']">
                             <i class="fa fa-monument"></i>&nbsp;
                             <span>{{ 'Player of the Month' }}</span>
                         </a>
@@ -42,38 +48,44 @@
         </div>
 
         <div class="nested-menu">
-            <a (click)="addExpandClass1('pages')" [routerLinkActive]="['router-link-active']" [routerLink]="['/annual-votes']" class="list-group-item">
+            <a (click)="addExpandClass1('pages')" [routerLinkActive]="['router-link-active']"
+                [routerLink]="['/annual-votes']" class="list-group-item">
                 <i class="fa fa-fw fa-plus-square"></i>&nbsp;
                 <span>{{ 'Symptoms' }}</span>
             </a>
             <li [class.expand]="showMenu1 === 'pages'" class="nested">
                 <ul class="submenu">
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/annual-votes/soccer-stars-top11']">
+                        <a [routerLinkActive]="['router-link-active']"
+                            [routerLink]="['/annual-votes/soccer-stars-top11']">
                             <i class="fa fa-monument"></i>&nbsp;
                             <span>{{ 'Soccer Stars (Top 11)' }}</span>
                         </a>
                     </li>
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/annual-votes/coach-of-the-year']">
+                        <a [routerLinkActive]="['router-link-active']"
+                            [routerLink]="['/annual-votes/coach-of-the-year']">
                             <i class="fa fa-monument"></i>&nbsp;
                             <span>{{ 'Coach of the Year' }}</span>
                         </a>
                     </li>
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/annual-votes/goalkeeper-of-the-year']">
+                        <a [routerLinkActive]="['router-link-active']"
+                            [routerLink]="['/annual-votes/goalkeeper-of-the-year']">
                             <i class="fa fa-monument"></i>&nbsp;
                             <span>{{ 'Goalkeeper of the Year' }}</span>
                         </a>
                     </li>
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/annual-votes/promising-young-player']">
+                        <a [routerLinkActive]="['router-link-active']"
+                            [routerLink]="['/annual-votes/promising-young-player']">
                             <i class="fa fa-monument"></i>&nbsp;
                             <span>{{ 'Promising Young Player' }}</span>
                         </a>
                     </li>
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/annual-votes/soccer-stars-top3']">
+                        <a [routerLinkActive]="['router-link-active']"
+                            [routerLink]="['/annual-votes/soccer-stars-top3']">
                             <i class="fa fa-monument"></i>&nbsp;
                             <span>{{ 'Soccer Stars (Best 3)' }}</span>
                         </a>
@@ -87,7 +99,8 @@
             <span>{{ 'Help' }}</span>
         </a>
 
-        <a (click)="onLoggedout()" [routerLinkActive]="['router-link-active']" class="list-group-item" routerLink="/login">
+        <a (click)="onLoggedout()" [routerLinkActive]="['router-link-active']" class="list-group-item"
+            routerLink="/login">
             <i class="fa fa-fw fa-power-off"></i>&nbsp;
             <span>{{ 'Log Out' }}</span>
         </a>

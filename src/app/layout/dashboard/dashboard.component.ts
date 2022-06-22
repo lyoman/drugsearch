@@ -12,30 +12,13 @@ import { ChartData, ChartOptions } from 'chart.js';
 })
 export class DashboardComponent implements OnInit {
 
-  // lineChartData: ChartDatasetProperties[] = [
-  //   { data: [85, 72, 78, 75, 77, 75], label: 'Crude oil prices' },
-  // ];
-  // lineChartLabels: TooltipLabelStyle[] = ['January', 'February', 'March', 'April', 'May', 'June'];
-  // lineChartOptions = {
-  //   responsive: true,
-  // };
-  // lineChartColors: Color[] = [
-  //   {
-  //     borderColor: 'black',
-  //     backgroundColor: 'rgba(255,255,0,0.28)',
-  //   },
-  // ];
-  // lineChartLegend = true;
-  // lineChartPlugins = [];
-  // lineChartType = 'line';
-
   salesData: ChartData<'line'> = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'],
     datasets: [
-      { label: 'Mobiles', data: [1000, 1200, 1050, 2000, 500], tension: 0.5 },
-      { label: 'Laptop', data: [200, 100, 400, 50, 90], tension: 0.5 },
-      { label: 'AC', data: [500, 400, 350, 450, 650], tension: 0.5 },
-      { label: 'Headset', data: [1200, 1500, 1020, 1600, 900], tension: 0.5 },
+      { label: 'Malaria', data: [100, 120, 105, 200, 50, 35], tension: 0.5 },
+      { label: 'Typhoid', data: [200, 10, 40, 50, 90, 10], tension: 0.5 },
+      { label: 'Diabetes', data: [50, 40, 35, 45, 65, 120], tension: 0.5 },
+      { label: 'Fungal infection', data: [120, 150, 102, 160, 90, 90], tension: 0.5 },
     ],
   };
   chartOptions: ChartOptions = {
@@ -43,7 +26,7 @@ export class DashboardComponent implements OnInit {
     plugins: {
       title: {
         display: true,
-        text: 'Monthly Sales Data',
+        text: 'Monthly Diseases Cases',
       },
     },
   };
@@ -65,7 +48,7 @@ export class DashboardComponent implements OnInit {
       title: 'Weekly Report',
       link: '/annual-votes',
       paragragh: 'weekly number of new cases'
-    }, 
+    },
     {
       image: 'assets/images/dashboard/trophy (7).png',
       title: 'Monthly Report',
@@ -77,7 +60,7 @@ export class DashboardComponent implements OnInit {
       title: 'Annual Report',
       link: '/rerun',
       paragragh: 'yearly number of new cases'
-    }, 
+    },
   ]
 
 }
